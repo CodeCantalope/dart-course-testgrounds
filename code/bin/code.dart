@@ -1,5 +1,9 @@
-import 'package:code/code.dart' as code;
-
 void main(List<String> arguments) {
-  print('Hello world: ${code.calculate()}!');
+  late final myValue = 50;
+  print(myValue);
+}
+
+int getValue() {
+  print("Got Value");
+  return 10;
 }
