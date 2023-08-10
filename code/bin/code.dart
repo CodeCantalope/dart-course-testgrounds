@@ -1,9 +1,13 @@
-void main(List<String> arguments) {
-  late final myValue = 50;
-  print(myValue);
-}
+// ignore_for_file: unused_local_variable
 
-int getValue() {
-  print("Got Value");
-  return 10;
+void main(List<String?>? arguments) {}
+
+extension Describe on Object? {
+  void describe() {
+    if (this == null) {
+      print('This Object is null!');
+    } else {
+      print('$runtimeType: $this');
+    }
+  }
 }
